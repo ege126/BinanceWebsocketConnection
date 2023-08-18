@@ -62,7 +62,7 @@ class BinanceWebSocket:
             except Exception as e:
                 print(f"Reconnection failed: {e}")
 
-
+# EXAMPLE USAGE:
 def run_websocket_instance(ws):
     binance_ws.ws.run_forever()
 
@@ -86,5 +86,5 @@ if __name__ == "__main__":
     # STOP THE WEBSOCKET AND JOIN THE THREAD
     binance_ws.force_stop()
     websocket_thread.join()
-
+    
     print("Main thread finished")
